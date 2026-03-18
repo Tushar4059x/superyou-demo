@@ -1,26 +1,28 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand-red: #ef1400;
+  --color-brand-dark-red: #e32303;
+  --color-brand-black: #151515;
+  --color-brand-gray: #bfbfbf;
+  --color-brand-light-gray: #f7f7f7;
+  --color-brand-background: #ffffff;
+  --color-brand-border: rgba(21, 21, 21, 0.06);
+  --font-archivo: "Archivo", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #151515;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+/* Brand utility: hard shadow (offset black box-shadow) */
+.hard-shadow {
+  box-shadow: 4px 4px 0px 0px #151515;
+}
+
+.hard-shadow-sm {
+  box-shadow: 2px 2px 0px 0px #151515;
 }
